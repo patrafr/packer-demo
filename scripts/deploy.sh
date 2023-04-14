@@ -1,6 +1,6 @@
 #!/bin/bash
-curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-apt-get install -y nginx nodejs
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\
+sudo apt-get install -y nodejs
 
 groupadd node-demo
 useradd -d /app -s /bin/false -g node-demo node-demo
